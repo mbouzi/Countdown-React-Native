@@ -1,9 +1,9 @@
 import React from 'react';
 import EventList from './EventList';
 import EventForm from './EventForm';
-import {StackNavigator} from 'react-navigation';
+import {createStackNavigator} from 'react-navigation';
 
-export default StackNavigator({
+export default createStackNavigator({
   list: {
     screen: EventList,
     navigationOptions: () => ({
